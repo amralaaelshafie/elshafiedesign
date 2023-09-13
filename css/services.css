@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root{
+    --black-color: #1a1a1b;
+    --bold-lead-color: #7a7a7a;
+    --light-lead-color: #f3f3f3;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+input{
+    outline: none;
+}
+
+::selection{
+  background-color: var(--light-lead-color);
+  color: var(--bold-lead-color);
+}
+
+/*start header*/
+
+li a {
+    display: inline !important;
+    color: white !important;
+}
+
+
+.navbar-nav  .chat{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 150px;
+}
+
+.navbar-nav  .chat .chatlink{
+    color: #000000 !important;
+}
+
+
+.nav-item svg{
+    color: var(--bold-lead-color);
+    padding: 0 4px !important;
+}
+
+.nav-limkss{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:912px) {
+    .nav-limkss{
+        display: block;
+        padding: 15px;
+    }
+}
+
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.img-nav{
+    width: 200px;
+}
+
+@media (max-width:912px) {
+    .img-nav{
+        width: 120px;
+    }
+}
+
+/*End header*/
+/* start landing */
+
+
+
+.landing-about{
+    width: 100%;
+    min-height: 80vh;
+     display: flex;
+    align-items: center;
+    background-color: #1a1a1a;
+    background: url(../image/cover1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #060709;
+}
+
+
+.landing-about h1{
+    color: rgb(250, 250, 250);
+    font-weight: bold;
+}
+
+
+
+.landing-about p{
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+
+.landing{
+    background-color: #ffffff;
+    }
+
+    .row{
+    direction: rtl;
+
+    }
+
+    @media (max-width : 920px) {
+        .row .myimg{
+            text-align: center;
+
+           }
+    }
+
+
+
+
+    .row .text{
+        direction: ltr;
+    }
+
+
+    @media (max-width : 920px) {
+        .landing-about p{
+            line-height: 17.8px;
+        }
+    }
+    .landing-about .text2{
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 50px;
+      color: white;
+      text-align: center;
+    }
+    
+    .landing-about .text2 p{
+      line-height: 15.9px;
+      font-size: 15px !important;
+    }
+
+
+/* end landing */
+/* Start Services */
+
+
+.main-title h6{
+    letter-spacing: 5px;
+}
+
+.row2 {
+    direction: ltr !important;
+}
+
+.feat a{
+    text-decoration: underline;
+    color: #000000;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* End Services */
+/* Start Footer */
+
+.footer{
+    background-color:var(--black-color);
+    color: white;
+    overflow: hidden;
+}
+
+.row3{
+    direction: ltr;
+}
+
+.foot-description p{
+    letter-spacing: 1px;
+}
+
+.copyright{
+    color: white;
+    background-color: #000000;
+    text-align: center;
+}
+
+.mylinkss a{
+    font-size: 19px;
+    color: white;
+}
+/* End footer */

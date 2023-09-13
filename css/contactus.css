@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root{
+    --black-color: #1a1a1b;
+    --bold-lead-color: #7a7a7a;
+    --light-lead-color: #f3f3f3;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+::selection{
+  background-color: var(--light-lead-color);
+  color: var(--bold-lead-color);
+}
+
+
+a{
+    text-decoration: none;
+}
+
+input{
+    outline: none;
+}
+
+/*start header*/
+
+li a {
+    display: inline !important;
+    color: white !important;
+}
+
+
+.navbar-nav  .chat{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 150px;
+}
+
+.navbar-nav  .chat .chatlink{
+    color: #000000 !important;
+}
+
+
+.nav-item svg{
+    color: var(--bold-lead-color);
+    padding: 0 4px !important;
+}
+
+.nav-limkss{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:912px) {
+    .nav-limkss{
+        display: block;
+        padding: 15px;
+    }
+}
+
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.img-nav{
+    width: 200px;
+}
+
+@media (max-width:912px) {
+    .img-nav{
+        width: 120px;
+    }
+}
+
+/*End header*/
+/* start landing */
+.landing-about{
+    width: 100%;
+    min-height: 80vh;
+     display: flex;
+    align-items: center;
+    background: url(../image/amrbackground2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-color: #060709;
+}
+
+.landing-about h1{
+    color: white;
+}
+
+
+.landing-about p{
+    color: white;
+}
+
+/* end landing */
+/* start about-main */
+
+.following .mylinks a{
+color: var(--bold-lead-color);
+}
+
+.about-main{
+    display: flex ;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.paragraph p{
+    line-height: 30px;
+}
+/*  */
+/*  */
+
+
+.me {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (max-width:912px) {
+    .me {
+      flex-wrap: wrap;
+    }
+  }
+   .me .image {
+    color: rgb(3, 3, 3);
+  }
+  @media (max-width: 991px) {
+    .me .image {
+      flex-basis: 100%;
+    }
+  }
+  .me .form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  @media (max-width: 720px) {
+    .me .form {
+      flex-basis: 100%;
+    }
+  }
+  .me .form .input {
+    display: block;
+    width: 150%;
+    margin-bottom: 25px;
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: #f9f9f9;
+    caret-color: rgb(90, 90, 90);
+  }
+
+  @media (max-width:912px) {
+    .me .form .input {
+      width: 120%;
+    }
+  }
+
+  @media (max-width:280px) {
+    .me .form .input {
+      width: 100%;
+    }
+  }
+
+
+  @media (min-width:1024px) {
+    .me .form .input {
+      width: 100%;
+    }
+  }
+
+  @media (min-width:1026px) {
+    .me .form .input {
+      width: 150%;
+    }
+  }
+
+
+
+
+  .me .form textarea.input {
+    height: 100px;
+  }
+
+  .me .form .input:focus {
+    outline: none;
+  }
+  .me .form [type="button"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(117, 116, 116);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: var(--main-transition);
+  }
+  .me .form [type="button"]:hover {
+    background-color: var(--black-color);
+  }
+  .me .content {
+    padding: 0 20px;
+  }
+  .me .content h2 {
+    font-size: 40px;
+    color: black;
+    padding-bottom: 20px;
+  }
+
+
+
+  .map iframe{
+    width: 300px;
+    height: 500px;
+  }
+
+
+@media (max-width:912px) {
+
+  .map{
+    display: block;
+    margin: auto;
+    text-align: center;
+    }
+
+.map iframe{
+  width: 250px;
+  height: 250px;
+  margin-top: 40px;
+  overflow: hidden;
+}
+
+}
+
+/*  */
+
+
+
+
+
+/* Start Footer */
+.footer{
+  background-color:var(--black-color);
+  color: white;
+  overflow: hidden;
+}
+
+.row3{
+  direction: ltr;
+}
+
+.foot-description p{
+  letter-spacing: 1px;
+}
+
+.copyright{
+  color: white;
+  background-color: #000000;
+  text-align: center;
+}
+
+.mylinkss a{
+  font-size: 19px;
+  color: white;
+}
+/* End footer */
